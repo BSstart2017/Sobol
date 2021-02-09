@@ -18,8 +18,7 @@ const Homepage = () => {
                         <img className="w-100 h-100" src="img/Rectangle45.png" alt="HomeLogo"/>
                     </div>
                     <div className={style.text}>
-                        <p>ОРГАНИЗУЕМ
-                           МЕРОПРИЯТИЯ</p>
+                        <p>ОРГАНИЗУЕМ <br/>МЕРОПРИЯТИЯ</p>
                     </div>
                 </Col>
                 <Col className="col-md-12">
