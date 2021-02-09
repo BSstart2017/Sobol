@@ -1,0 +1,85 @@
+.aboutGifHeight {
+    height: 276px;
+}
+
+.aboutImgHeight {
+    height: 704px;
+}
+
+.aboutText h1 {
+    position: absolute;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 45px;
+    line-height: 110.7%;
+    color: #FFFFFF;
+
+    left: 99px;
+    top: 127px;
+}
+
+.aboutTextStrategy h2 {
+    position: absolute;
+    font-style: normal;
+    font-weight: bold;
+    color: #FFFFFF;
+    font-size: 30px;
+    line-height: 37px;
+    left: 122px;
+    top: 302px;
+}
+
+.aboutTextStrategy h3 {
+    position: absolute;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+
+    left: 122px;
+    top: 369px;
+}
+
+.aboutTextStrategy span {
+    position: absolute;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 300px;
+    line-height: 366px;
+
+    left: 308px;
+    top: 179px;
+}
+
+
+.aboutTextInteraction {
+    position: absolute;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 37px;
+    color: #FFFFFF;
+
+    left: 477px;
+    top: 302px;
+}
+
+.aboutTextCreative {
+    position: absolute;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 37px;
+    color: #FFFFFF;
+
+    left: 885px;
+    top: 302px;
+}
+
+.gradientText {
+    text-transform: uppercase;
+    background: linear-gradient(85.86deg, #A9F7E8 -12.09%, #8FECDA 82.05%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

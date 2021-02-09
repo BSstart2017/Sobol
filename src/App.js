@@ -9,17 +9,17 @@ import Homepage from "./Components/Home/Homepage/Homepage";
 const App = () => {
     return (<>
             <Container className="container">
-                <Row className="justify-content-md-end">
-                    <Col className="col-md-10">
+                <Row>
+                    <Col className="col-md-11">
                         <Homepage/>
                     </Col>
-                    <Col className="col-md-2">
+                    <Col className="col-md-1">
                         <Sidebar />
                     </Col>
-                    <Col className="col-md-12">
+                    <Col className="col-md-11">
                         <Navbarscrol/>
                     </Col>
-                    <Col className="col-md-12 justify-content-end">
+                    <Col className="col-md-11">
                         <Home/>
                     </Col>
                 </Row>

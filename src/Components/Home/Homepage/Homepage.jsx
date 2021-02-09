@@ -13,7 +13,7 @@ const Homepage = () => {
                 <Col className="col-md-12" >
                     <Homeheader />
                 </Col>
-                <Col className="col-md-12 sidebar-button p-0">
+                <Col className="col-md-12">
                     <div className={style.height}>
                         <img className="w-100 h-100" src="img/Rectangle45.png" alt="HomeLogo"/>
                     </div>

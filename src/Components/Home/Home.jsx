@@ -1,10 +1,15 @@
 import React from "react";
+import Homeabout from "./Homecontent/Homeabout/Homeabout";
+import {Col, Row} from "react-bootstrap";
 
 
 const Home = () => {
     return (
-       <div>
-       </div>
+        <Row>
+            <Col className="col-md-12">
+                <Homeabout/>
+            </Col>
+        </Row>
     )
 }
 
