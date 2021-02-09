@@ -1,0 +1,42 @@
+.headerButtonText{
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+
+.headerButtonHeight{
+    width: 105%;
+    background: linear-gradient(91.82deg, #81CCE9 1.02%, #00A1BF 97.59%);
+    border-radius: 34px
+}
+
+.headerLogoTest p{
+    font-style: normal;
+    font-weight: 900;
+    font-size: 28px;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+}
+
+.headerLogoTextNumber{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 23px;
+    color: rgba(0, 48, 72, 0.5);
+}
+
+.headerLogoColorBlue{
+    color: #04A3C1;
+}
+
+.headerLogoColorNumber{
+    color:#7CCAE8;
+}
+
+.homeHeaderHeight{
+    height: 276px;
+}

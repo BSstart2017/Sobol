@@ -1,0 +1,50 @@
+.text p{
+    position: absolute;
+    font-size: 107px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 122px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    top: 40px;
+    left: 40px;
+    color: #FFFFFF;
+}
+
+.height{
+    height: 304px;
+}
+
+.footerTextBest p{
+    font-size: 16px;
+    font-style: normal;
+    line-height: 20px;
+    letter-spacing: -0.08em;
+    text-align: left;
+    font-weight: 300;
+
+    margin: 0;
+    padding: 0;
+
+}
+.footerHeight{
+    height: 278px;
+}
+
+.footerPadding{
+    padding-bottom: 40px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.footerTextMe p{
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: -0.08em;
+    text-align: left;
+
+    margin: 0;
+    padding: 0;
+}

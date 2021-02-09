@@ -1,0 +1,21 @@
+.sidebarRightText{
+
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+
+.sidebarButton{
+    background-color: #003048;
+    color: #FFFFFF;
+}
+
+.sidebarEngPosition{
+    height: 272px;
+    margin-left: 10px;
+}
