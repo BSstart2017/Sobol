@@ -7,13 +7,13 @@ const Sidebar = () => {
     return (
         <div>
             <Row className={style.sidebarEngPosition}>
-                <div className="d-flex align-items-center justify-content-center">
+                <div className="d-flex align-items-center">
                     <Col className="col-md-12">
                         <Sidebareng/>
                     </Col>
                 </div>
             </Row>
-            <div className="align-items-center position-fixed text-center align-middle justify-content-center">
+            <div className="position-fixed">
                 <Row className="m-1">
                     <div className={style.sidebarRightText + " " + style.sidebarButton}>
                         <Col className="col-md-1 ">

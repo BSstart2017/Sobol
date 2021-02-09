@@ -1,0 +1,19 @@
+.divHeight{
+    height: 98px;
+    width: 234px;
+    background: #81CCE9;
+;
+}
+
+.buttonText{
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 100%;
+    color: #FFFFFF;
+}
+
+.carouselsHeight{
+    width: 1303px;
+    height: 454px;
+}
