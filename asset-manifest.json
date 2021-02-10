@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/Sobol/static/css/main.1ce8b766.chunk.css",
+    "main.js": "/Sobol/static/js/main.4e50a0f0.chunk.js",
+    "main.js.map": "/Sobol/static/js/main.4e50a0f0.chunk.js.map",
+    "runtime-main.js": "/Sobol/static/js/runtime-main.0df85927.js",
+    "runtime-main.js.map": "/Sobol/static/js/runtime-main.0df85927.js.map",
+    "static/css/2.150d169a.chunk.css": "/Sobol/static/css/2.150d169a.chunk.css",
+    "static/js/2.08c7c6d5.chunk.js": "/Sobol/static/js/2.08c7c6d5.chunk.js",
+    "static/js/2.08c7c6d5.chunk.js.map": "/Sobol/static/js/2.08c7c6d5.chunk.js.map",
+    "static/js/3.a8d2f253.chunk.js": "/Sobol/static/js/3.a8d2f253.chunk.js",
+    "static/js/3.a8d2f253.chunk.js.map": "/Sobol/static/js/3.a8d2f253.chunk.js.map",
+    "index.html": "/Sobol/index.html",
+    "static/css/2.150d169a.chunk.css.map": "/Sobol/static/css/2.150d169a.chunk.css.map",
+    "static/css/main.1ce8b766.chunk.css.map": "/Sobol/static/css/main.1ce8b766.chunk.css.map",
+    "static/js/2.08c7c6d5.chunk.js.LICENSE.txt": "/Sobol/static/js/2.08c7c6d5.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0df85927.js",
+    "static/css/2.150d169a.chunk.css",
+    "static/js/2.08c7c6d5.chunk.js",
+    "static/css/main.1ce8b766.chunk.css",
+    "static/js/main.4e50a0f0.chunk.js"
+  ]
+}
