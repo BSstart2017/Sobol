@@ -4,7 +4,7 @@ import style from "./homecontact.module.css";
 
 const Contactcarousels = () => {
     return (
-        <Col className={"h-100 " + style.carouselsHeight}>
+        <Col className={style.carouselsHeight}>
             <Carousel >
                 <Carousel.Item>
                     <img className="d-block w-100 h-100" src="img/Rectangle45.png" alt="First slide"/>
