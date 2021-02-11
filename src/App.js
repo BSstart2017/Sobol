@@ -16,7 +16,7 @@ const App = () => {
                     <Col className="col-md-1">
                         <Sidebar />
                     </Col>
-                    <Col className="col-md-11">
+                    <Col className="col-md-11 pr-0">
                         <Navbarscrol/>
                     </Col>
                     <Col className="col-md-11">
