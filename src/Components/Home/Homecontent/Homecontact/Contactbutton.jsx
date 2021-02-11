@@ -5,17 +5,17 @@ import style from "./homecontact.module.css";
 const Contactbutton = () => {
     return (
         <Row>
-            <Col className="col-md-5 p-0 d-flex justify-content-end text-center">
+            <Col className="col-md-5 p-0 pt-5 d-flex justify-content-end text-center">
                 <div className={"d-flex align-items-center justify-content-center text-center " + style.divHeight}>
                     <h2 className={style.buttonText}>Бизнес-<br/>мероприятия</h2>
                 </div>
             </Col>
-            <Col className="col-md-2 p-0 d-flex justify-content-center text-center">
+            <Col className="col-md-2 p-0 pt-5 d-flex justify-content-center text-center">
                 <div className={"d-flex align-items-center justify-content-center text-center " + style.divHeight}>
                     <h2 className={style.buttonText}>Семейные-<br/>мероприятия</h2>
                 </div>
             </Col>
-            <Col className="col-md-5 d-flex justify-content-between text-center p-0">
+            <Col className="col-md-5 pt-5 d-flex justify-content-between text-center p-0">
                 <div className={"d-flex align-items-center justify-content-center text-center " + style.divHeight}>
                     <h2 className={style.buttonText}>Ночные-<br/>мероприятия</h2>
                 </div>

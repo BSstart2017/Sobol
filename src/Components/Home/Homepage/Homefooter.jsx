@@ -8,13 +8,13 @@ const Homefooter = () => {
             <Row className={style.footerHeight}>
                 <Col className="col-md-4 d-flex align-items-end justify-content-center">
                     <div className={style.footerPadding}>
-                        <img src="img/icon/WatsApp.png" alt="HomeLogo"/>
+                        <img src={process.env.PUBLIC_URL +"/img/icon/WatsApp.png"} alt="HomeLogo"/>
                     </div>
                     <div className={style.footerPadding}>
-                        <img src="img/icon/FB.png" alt="HomeLogo"/>
+                        <img src={process.env.PUBLIC_URL +"/img/icon/FB.png"} alt="HomeLogo"/>
                     </div>
                     <div className={style.footerPadding}>
-                        <img src="img/icon/VK.png" alt="HomeLogo"/>
+                        <img src={process.env.PUBLIC_URL +"/img/icon/VK.png"} alt="HomeLogo"/>
                     </div>
                 </Col>
                 <Col className="col-md-4 d-flex align-items-center justify-content-center">

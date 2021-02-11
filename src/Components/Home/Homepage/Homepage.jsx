@@ -15,7 +15,7 @@ const Homepage = () => {
                 </Col>
                 <Col className="col-md-12">
                     <div className={style.height}>
-                        <img className="w-100 h-100" src="img/Rectangle45.png" alt="HomeLogo"/>
+                        <img className="w-100 h-100" src={process.env.PUBLIC_URL +"/img/Rectangle45.png"} alt="HomeLogo"/>
                     </div>
                     <div className={style.text}>
                         <p>ОРГАНИЗУЕМ <br/>МЕРОПРИЯТИЯ</p>

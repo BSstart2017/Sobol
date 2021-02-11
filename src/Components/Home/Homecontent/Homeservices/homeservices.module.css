@@ -1,28 +1,34 @@
-.divHeight{
-    height: 98px;
-    width: 234px;
+.rowBgColor{
     background: #81CCE9;
-;
 }
 
-.buttonText{
+.imgFishPadding{
+    padding-left: 8rem;
+}
+
+.textStyle{
     font-style: normal;
-    font-weight: 800;
-    font-size: 20px;
-    line-height: 100%;
+    font-weight: 900;
+    font-size: 45px;
+    line-height: 110.7%;
+    padding-right: 15rem;
+
     color: #FFFFFF;
 }
 
-
-.carouselsDiv{
-    position: absolute;
-    top: 3rem;
-    left:105px;
-    width: 468px;
-    height: 90%;
-    background: rgba(0, 48, 72, 0.7);
-    backdrop-filter: blur(15px);
+.containerText{
+    right: 14rem;
+    top: 17rem;
+    background: rgba(0, 48, 72, 0.79);
+    backdrop-filter: blur(24px);
 }
+
+.carouselsTextBorderButton{
+    width: 156px;
+    height: 56px;
+    border: 3px solid #fff;
+}
+
 
 .carouselsDiv h2{
     font-style: normal;
@@ -46,10 +52,4 @@
     line-height: 22px;
     letter-spacing: -0.08em;
     color: #FFFFFF;
-}
-
-.carouselsTextBorderButton{
-    width: 156px;
-    height: 56px;
-    border: 3px solid #fff;
 }
