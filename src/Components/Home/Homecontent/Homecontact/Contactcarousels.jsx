@@ -2,7 +2,11 @@ import React from "react";
 import {Col, Row} from "react-bootstrap";
 import style from "./homecontact.module.css";
 
-const Contactcarousels = () => {
+const Contactcarousels = (props) => {
+    debugger
+    let ElementsTextServicesH2 = props.carouselsService.map(p =>
+        <h2 key={p.id}>{p.textServicesH2}</h2>)
+
     return (
         <Row>
             <Col className="col-md-12 pr-0 pt-5">
@@ -10,7 +14,7 @@ const Contactcarousels = () => {
                     <img className="w-100 img-fluid" src={process.env.PUBLIC_URL + "/img/biznes.png"} alt="HomeLogo"/>
                     <div className={"pb-0 " + style.carouselsDiv}>
                         <div className="d-flex pl-5 pt-5">
-                            <h2>Бизнес- <br/>мероприятия</h2>
+                            {ElementsTextServicesH2[1]}
                         </div>
                         <div className="d-flex pl-5 pt-3">
                             <h3>Бизнес-мероприятия – это конференции,<br/>

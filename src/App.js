@@ -5,8 +5,9 @@ import {Col, Container, Row} from "react-bootstrap";
 import "./App.css";
 import Navbarscrol from "./Components/Navbar/Navbarscrol";
 import Homepage from "./Components/Home/Homepage/Homepage";
+import {connect} from "react-redux";
 
-const App = () => {
+const App = (props) => {
     return (<>
             <Container className="container">
                 <Row>
@@ -28,4 +29,14 @@ const App = () => {
     );
 }
 
-export default App;
+const mapStateToProps = (state) => ({
+    carouselsService: state.Carousels.carouselsService
+})
+
+const mapDispatchToProps = (dispatch) => {
+    return{
+
+    }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(App);

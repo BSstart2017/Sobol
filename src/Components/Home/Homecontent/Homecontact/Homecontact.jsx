@@ -1,7 +1,7 @@
 import React from "react";
 import {Col, Row} from "react-bootstrap";
 import Contactbutton from "./Contactbutton";
-import Contactcarousels from "./Contactcarousels";
+import ContactcarouselsContainer from "./ContactcarouselsContainer";
 
 const Homecontact = () => {
     return (
@@ -10,7 +10,7 @@ const Homecontact = () => {
                 <Contactbutton />
             </Col>
             <Col className="col-md-12">
-                <Contactcarousels />
+                <ContactcarouselsContainer />
             </Col>
         </Row>
     )

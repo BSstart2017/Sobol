@@ -13,7 +13,7 @@ const Home = () => {
                 <Homeabout/>
             </Col>
             <Col className="col-md-12">
-                <Homecontact/>
+                <Homecontact />
             </Col>
             <Col className="col-md-12 pr-0">
                 <Homeservices/>
