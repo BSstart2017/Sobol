@@ -1,14 +1,21 @@
 import {connect} from "react-redux";
 import Contactcarousels from "./Contactcarousels";
+import {carouselsNumberAC} from "../../../../Redux/carouselsReducer";
 
-debugger
+
 const mapStateToProps = (state) => ({
-    carouselsService: state.Carousels.carouselsService
+    carouselsService: state.Carousels.carouselsService,
+    carouselsNumber: state.Carousels.carouselsNumber
 })
 
 const mapDispatchToProps = (dispatch) =>{
-    return{
-
+    return {
+        getNumberPlus: (NewPostText) => {
+            dispatch(carouselsNumberAC(NewPostText));
+        },
+        getNumberMinus:(NewPostText) => {
+            dispatch(carouselsNumberAC(NewPostText));
+        }
     }
 }
 
