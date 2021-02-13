@@ -1,9 +1,9 @@
 import React from "react";
 import Homeabout from "./Homecontent/Homeabout/Homeabout";
 import {Col, Row} from "react-bootstrap";
-import Homecontact from "./Homecontent/Homecontact/Homecontact";
 import Homeservices from "./Homecontent/Homeservices/Homeservices";
 import Homereviews from "./Homecontent/Homeservices/Homereviews";
+import HomeContactContainer from "./Homecontent/Homecontact/HomeContactContainer";
 
 
 const Home = () => {
@@ -13,7 +13,7 @@ const Home = () => {
                 <Homeabout/>
             </Col>
             <Col className="col-md-12">
-                <Homecontact />
+                <HomeContactContainer />
             </Col>
             <Col className="col-md-12 pr-0">
                 <Homeservices/>
