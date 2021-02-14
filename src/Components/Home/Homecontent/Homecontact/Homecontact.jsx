@@ -6,6 +6,20 @@ let localState = {styleButton: "d-flex align-items-center justify-content-center
 
 const Homecontact = (props) => {
 
+    let onStaticNumber = (values) => {
+        props.staticNumber(values.currentTarget.align)
+    }
+    let onNumberPlus =  () => {
+        props.carouselsNumber < 5
+            ?  props.getNumberPlus(Number(props.carouselsNumber) + 1)
+            : props.getNumberPlus(Number(props.carouselsNumber) - 5)
+    }
+    let onNumberMinus =  () => {
+        props.carouselsNumber > 0
+            ? props.getNumberMinus(Number(props.carouselsNumber) - 1)
+            : props.getNumberMinus(Number(props.carouselsNumber) + 5)
+    }
+
     let ElementsTextServices = props.carouselsService.map(p =>
         <div>
             <img key={p.id} className="w-100 img-fluid" src={process.env.PUBLIC_URL + p.imgServices} alt="CarouselsImg"/>
@@ -26,55 +40,36 @@ const Homecontact = (props) => {
         </div>
     )
 
-    let onNumberPlus =  () => {
-        props.carouselsNumber < 5
-            ?  props.getNumberPlus(props.carouselsNumber + 1)
-            : props.getNumberPlus(props.carouselsNumber - 5)
-    }
-
-    let onNumberMinus =  () => {
-        props.carouselsNumber > 0
-            ? props.getNumberMinus(props.carouselsNumber - 1)
-            : props.getNumberMinus(props.carouselsNumber + 5)
-    }
-
-    const onStaticNumber = (values) => {
-        props.staticNumber(values.currentTarget.align)
-    }
+    const ElementButton = props.content.map( i =>
+            <div key={i.id} className={Number(props.carouselsNumber) === Number(i.id)
+                ? localState.styleButton + " " + style.buttonAction
+                : localState.styleButton}>
+                <h2 key={i.id} align={Number(i.id)} onClick={onStaticNumber}
+                    className={style.buttonText}>{i.textButton1}<br/>{i.textButton2}</h2>
+            </div>
+        )
 
     return (
         <Row>
             <Col className="col-md-12">
                 <Row className={style.carousels}>
                     <Col className={"col-md-5 p-0 pt-5 d-flex justify-content-end text-center"}>
-                        <div className={Number(props.carouselsNumber) === 0 ? localState.styleButton + " " + style.buttonAction : localState.styleButton}>
-                            <h2 onClick={onStaticNumber} align="0" className={style.buttonText}>Бизнес-<br/>мероприятия</h2>
-                        </div>
+                        {ElementButton[0]}
                     </Col>
                     <Col className="col-md-2 p-0 pt-5 d-flex justify-content-center text-center">
-                        <div className={Number(props.carouselsNumber) === 1 ? localState.styleButton + " " + style.buttonAction : localState.styleButton}>
-                            <h2 onClick={onStaticNumber} align="1" className={style.buttonText}>Семейные-<br/>мероприятия</h2>
-                        </div>
+                        {ElementButton[1]}
                     </Col>
                     <Col className="col-md-5 pt-5 d-flex justify-content-between text-center p-0">
-                        <div className={Number(props.carouselsNumber) === 2 ? localState.styleButton + " " + style.buttonAction : localState.styleButton}>
-                            <h2 onClick={onStaticNumber} align="2" className={style.buttonText}>Ночные-<br/>мероприятия</h2>
-                        </div>
+                        {ElementButton[2]}
                     </Col>
                     <Col className="col-md-5 p-0 d-flex justify-content-end text-center">
-                        <div className={Number(props.carouselsNumber) === 3 ? localState.styleButton + " " + style.buttonAction : localState.styleButton}>
-                            <h2 onClick={onStaticNumber} align="3" className={style.buttonText}>Спортивные-<br/>мероприятия</h2>
-                        </div>
+                        {ElementButton[3]}
                     </Col>
                     <Col className="col-md-2 p-0 d-flex justify-content-center text-center">
-                        <div className={Number(props.carouselsNumber) === 4 ? localState.styleButton + " " + style.buttonAction : localState.styleButton}>
-                            <h2 onClick={onStaticNumber} align="4" className={style.buttonText}>HR-<br/>мероприятия</h2>
-                        </div>
+                        {ElementButton[4]}
                     </Col>
                     <Col className="col-md-5 d-flex justify-content-between text-center p-0">
-                        <div className={Number(props.carouselsNumber) === 5 ? localState.styleButton + " " + style.buttonAction : localState.styleButton}>
-                            <h2 onClick={onStaticNumber} align="5" className={style.buttonText}>Индивидуальные<br/>мероприятия</h2>
-                        </div>
+                        {ElementButton[5]}
                     </Col>
                 </Row>
             </Col>
