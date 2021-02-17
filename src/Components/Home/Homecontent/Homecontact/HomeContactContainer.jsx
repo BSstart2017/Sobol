@@ -4,7 +4,7 @@ import Homecontact from "./Homecontact";
 
 
 const mapStateToProps = (state) => ({
-    carouselsService: state.Carousels.carouselsService,
+    carouselsContact: state.Carousels.carouselsContact,
     carouselsNumber: state.Carousels.carouselsNumber,
     content: state.Carousels.content
 })

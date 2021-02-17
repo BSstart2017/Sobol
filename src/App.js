@@ -30,7 +30,7 @@ const App = (props) => {
 }
 
 const mapStateToProps = (state) => ({
-    carouselsService: state.Carousels.carouselsService
+    carouselsContact: state.Carousels.carouselsService
 })
 
 const mapDispatchToProps = (dispatch) => {

@@ -2,8 +2,9 @@ import React from "react";
 import Homeabout from "./Homecontent/Homeabout/Homeabout";
 import {Col, Row} from "react-bootstrap";
 import Homeservices from "./Homecontent/Homeservices/Homeservices";
-import Homereviews from "./Homecontent/Homeservices/Homereviews";
 import HomeContactContainer from "./Homecontent/Homecontact/HomeContactContainer";
+import HomeReviewsContainer from "./Homecontent/Homeservices/HomeReviewsContainer";
+import HomeContactText from "./HomeForm/HomeForm";
 
 
 const Home = () => {
@@ -17,7 +18,10 @@ const Home = () => {
             </Col>
             <Col className="col-md-12 pr-0">
                 <Homeservices/>
-                <Homereviews/>
+                <HomeReviewsContainer/>
+            </Col>
+            <Col className="col-md-12 pr-0">
+                <HomeContactText />
             </Col>
         </Row>
     )
