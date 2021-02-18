@@ -6,7 +6,6 @@ import HomeContactContainer from "./Homecontent/Homecontact/HomeContactContainer
 import HomeReviewsContainer from "./Homecontent/Homeservices/HomeReviewsContainer";
 import HomeContactText from "./HomeForm/HomeForm";
 
-
 const Home = () => {
     return (
         <Row>
@@ -20,7 +19,7 @@ const Home = () => {
                 <Homeservices/>
                 <HomeReviewsContainer/>
             </Col>
-            <Col className="col-md-12 pr-0">
+            <Col className="col-md-12">
                 <HomeContactText />
             </Col>
         </Row>

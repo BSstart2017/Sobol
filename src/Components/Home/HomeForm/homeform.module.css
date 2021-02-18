@@ -1,0 +1,52 @@
+.styleTextLeft{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    color: rgba(0, 48, 72, 0.5);
+}
+
+.styleTextRight{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+}
+
+.styleTextFormBottom{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+}
+.styleTextFormTop{
+    font-style: normal;
+    font-weight: 800;
+    font-size: 31px;
+    line-height: 110.7%;
+    color: #000000
+}
+
+.buttonStyleForm{
+    width: 100%;
+    background-color: white;
+    border: 2px solid #41B7D4;
+    box-sizing: border-box;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+}
+
+.formField {
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid gray;
+    outline: 0;
+    font-size: 1.3rem;
+    padding: 7px 0;
+    transition: border-color 0.2s;
+}
