@@ -1,25 +1,26 @@
 {
   "files": {
-    "main.css": "/Sobol/static/css/main.5ff115c9.chunk.css",
-    "main.js": "/Sobol/static/js/main.6964f7c4.chunk.js",
-    "main.js.map": "/Sobol/static/js/main.6964f7c4.chunk.js.map",
-    "runtime-main.js": "/Sobol/static/js/runtime-main.d7e31a2e.js",
-    "runtime-main.js.map": "/Sobol/static/js/runtime-main.d7e31a2e.js.map",
-    "static/css/2.150d169a.chunk.css": "/Sobol/static/css/2.150d169a.chunk.css",
-    "static/js/2.0474ee07.chunk.js": "/Sobol/static/js/2.0474ee07.chunk.js",
-    "static/js/2.0474ee07.chunk.js.map": "/Sobol/static/js/2.0474ee07.chunk.js.map",
-    "static/js/3.38421840.chunk.js": "/Sobol/static/js/3.38421840.chunk.js",
-    "static/js/3.38421840.chunk.js.map": "/Sobol/static/js/3.38421840.chunk.js.map",
+    "main.css": "/Sobol/static/css/main.ce5c6059.chunk.css",
+    "main.js": "/Sobol/static/js/main.3b97ed67.chunk.js",
+    "main.js.map": "/Sobol/static/js/main.3b97ed67.chunk.js.map",
+    "runtime-main.js": "/Sobol/static/js/runtime-main.a25306c3.js",
+    "runtime-main.js.map": "/Sobol/static/js/runtime-main.a25306c3.js.map",
+    "static/css/2.c4ee5c3c.chunk.css": "/Sobol/static/css/2.c4ee5c3c.chunk.css",
+    "static/js/2.7dd9cd3a.chunk.js": "/Sobol/static/js/2.7dd9cd3a.chunk.js",
+    "static/js/2.7dd9cd3a.chunk.js.map": "/Sobol/static/js/2.7dd9cd3a.chunk.js.map",
+    "static/js/3.15fabd24.chunk.js": "/Sobol/static/js/3.15fabd24.chunk.js",
+    "static/js/3.15fabd24.chunk.js.map": "/Sobol/static/js/3.15fabd24.chunk.js.map",
     "index.html": "/Sobol/index.html",
-    "static/css/2.150d169a.chunk.css.map": "/Sobol/static/css/2.150d169a.chunk.css.map",
-    "static/css/main.5ff115c9.chunk.css.map": "/Sobol/static/css/main.5ff115c9.chunk.css.map",
-    "static/js/2.0474ee07.chunk.js.LICENSE.txt": "/Sobol/static/js/2.0474ee07.chunk.js.LICENSE.txt"
+    "static/css/2.c4ee5c3c.chunk.css.map": "/Sobol/static/css/2.c4ee5c3c.chunk.css.map",
+    "static/css/main.ce5c6059.chunk.css.map": "/Sobol/static/css/main.ce5c6059.chunk.css.map",
+    "static/js/2.7dd9cd3a.chunk.js.LICENSE.txt": "/Sobol/static/js/2.7dd9cd3a.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/Sobol/static/media/montserrat-latin-900italic.efcaa0f6.woff"
   },
   "entrypoints": [
-    "static/js/runtime-main.d7e31a2e.js",
-    "static/css/2.150d169a.chunk.css",
-    "static/js/2.0474ee07.chunk.js",
-    "static/css/main.5ff115c9.chunk.css",
-    "static/js/main.6964f7c4.chunk.js"
+    "static/js/runtime-main.a25306c3.js",
+    "static/css/2.c4ee5c3c.chunk.css",
+    "static/js/2.7dd9cd3a.chunk.js",
+    "static/css/main.ce5c6059.chunk.css",
+    "static/js/main.3b97ed67.chunk.js"
   ]
 }
