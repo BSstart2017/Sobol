@@ -7,7 +7,7 @@ const Homeservices = () => {
     return (
         <Row className={"pr-0 mr-0 ml-0 " + style.rowBgColor}>
             <Col className="col-md-12 pr-0">
-                <h2 className={"pt-5 text-right " + style.textStyle}>Последние кейсы,<br/>как это было:</h2>
+                <h2 id="services" className={"pt-5 text-right " + style.textStyle}>Последние кейсы,<br/>как это было:</h2>
                 <Col className={"col-md-10 pr-0 pt-5  " + style.imgFishPadding}>
                     <img className="img-fluid w-100" src={process.env.PUBLIC_URL + "/img/fish1.png"} alt="Fish1"/>
                 </Col>

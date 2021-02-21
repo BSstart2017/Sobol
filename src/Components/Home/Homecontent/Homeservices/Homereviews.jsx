@@ -27,14 +27,13 @@ const Homereviews = (props) => {
         </div>
     )
 
-    debugger
     let onStaticNumberReviews = (values) => {
         props.numberStaticReviews(values.currentTarget.align)
     }
 
     const ElementReviewsButton = props.carouselsReviews.map(i =>
         <Col className="col-md-1 p-0 d-flex justify-content-center">
-            <div  align={Number(i.id)} onClick={onStaticNumberReviews}
+            <div align={Number(i.id)} onClick={onStaticNumberReviews}
                   className={Number(props.carouselsNumberReviews) === Number(i.id)
                 ? localState.styleButton + " " + style.circleFull
                 : localState.styleButton}>

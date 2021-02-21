@@ -4,7 +4,7 @@ import {Col, Row} from "react-bootstrap";
 
 const HomeContactMessage = () => {
     return (
-        <Row className="pt-5 pb-5">
+        <Row id="form" className="pt-5 pb-5">
             <Col className={"col-md-3 pt-5 " + style.styleTextLeft}>
                 <h2 className="p-2 pt-5">e-mail:</h2>
                 <h2 className="p-2">телефон:</h2>

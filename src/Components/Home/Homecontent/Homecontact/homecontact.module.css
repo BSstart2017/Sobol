@@ -55,3 +55,12 @@
 .carousels .buttonAction{
     background: #81CCE9;
 }
+
+.styleTextNext h2{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+    color: rgba(18, 24, 67, 0.48);
+}

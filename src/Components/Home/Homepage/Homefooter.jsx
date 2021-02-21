@@ -1,5 +1,5 @@
 import React from "react";
-import {Col, Row} from "react-bootstrap";
+import {Col, Nav, Row} from "react-bootstrap";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import style from "./home.module.css";
 
@@ -20,7 +20,7 @@ const Homefooter = () => {
                 <Col className="col-md-4 d-flex align-items-center justify-content-center">
                     <div className={style.footerTextBest}>
                         <p>Best Event Award World <br/>2018 и 2019 годов,<br/>и десятка наград поменьше</p><br/>
-                        <p>Подробнее....</p>
+                        <Nav.Link className={style.footerTextBest} href="#portfolio">Подробнее....</Nav.Link>
                     </div>
                 </Col>
                 <Col className="col-md-4 d-flex align-items-center justify-content-center">

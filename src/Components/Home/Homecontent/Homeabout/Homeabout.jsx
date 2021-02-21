@@ -8,7 +8,7 @@ const Homeabout = () => {
         <Row>
             <Col className="col-md-12">
                 <div className={style.aboutGifHeight}>
-                    <img className="h-100 w-100" src={process.env.PUBLIC_URL + "/gif/gifabout.png"} alt="gifabout"/>
+                    <img id="about" className="h-100 w-100" src={process.env.PUBLIC_URL + "/gif/gifabout.png"} alt="gifabout"/>
                 </div>
             </Col>
             <Col className="col-md-12">

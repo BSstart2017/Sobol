@@ -1,31 +1,31 @@
 import React from "react";
-import {Nav, Navbar, NavDropdown} from "react-bootstrap";
+import {Button, Col, Row} from "react-bootstrap";
+import style from "../Home/Homepage/Homeheader/homeheader.module.css";
 
 const Navbarscrol = () => {
     return (
-        <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-            <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
-            <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-            <Navbar.Collapse id="responsive-navbar-nav">
-                <Nav className="mr-auto">
-                    <Nav.Link href="#features">Features</Nav.Link>
-                    <Nav.Link href="#pricing">Pricing</Nav.Link>
-                    <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
-                        <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                        <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-                        <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-                        <NavDropdown.Divider />
-                        <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
-                    </NavDropdown>
-                </Nav>
-                <Nav>
-                    <Nav.Link href="#deets">More deets</Nav.Link>
-                    <Nav.Link eventKey={2} href="#memes">
-                        Dank memes
-                    </Nav.Link>
-                </Nav>
-            </Navbar.Collapse>
-        </Navbar>
+        <Row className={"w-100 bg-white " + style.positionNavbarScroll}>
+            <Col className="d-flex align-items-center justify-content-center">
+                <div className={style.headerLogoTest}>
+                    <p>evento</p>
+                    <p> agency</p>
+                    <p> Minsk<span className={style.headerLogoColorBlue}>.</span></p>
+                </div>
+            </Col>
+            <Col className="d-flex align-items-center justify-content-center">
+                <div className={style.headerLogoTest}>
+                    <p><span className={style.headerLogoColorNumber}>+375(29)</span> 298-98-98</p>
+                </div>
+            </Col>
+            <Col className="d-flex align-items-center justify-content-center">
+                <div >
+                    <Button className={style.headerButtonHeight} type="submit">БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ</Button>
+                </div>
+            </Col>
+            <Col>
+                <span>ENG</span>
+            </Col>
+        </Row>
     )
 }
 

@@ -6,11 +6,10 @@
     line-height: 29px;
     letter-spacing: 0.07em;
     text-transform: uppercase;
-
     color: #FFFFFF;
 }
 
-.sidebarButton{
+.sidebarButtonActive{
     background-color: #003048;
     color: #FFFFFF;
 }
@@ -18,4 +17,21 @@
 .sidebarEngPosition{
     height: 272px;
     margin-left: 10px;
+}
+
+.styleScroll{
+    padding-left: 5rem;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 114%;
+    letter-spacing: -0.02em;
+    color: #003048;
+    transform: rotate(89.55deg);
+}
+
+.positionSidebar{
+    position: sticky;
+    top:16.3%;
+    z-index: 2;
 }
