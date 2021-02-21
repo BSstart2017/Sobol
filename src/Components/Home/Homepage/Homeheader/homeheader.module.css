@@ -46,3 +46,27 @@
     top:0;
     z-index: 2;
 }
+
+.navbarScrollText{
+    font-style: normal;
+    font-weight: 900;
+    font-size: 45px;
+    line-height: 110.7%;
+    color: #000000;
+}
+
+.navbarScrollTextEng{
+    font-style: normal;
+    font-weight: 800;
+    font-size: 17px;
+    line-height: 21px;
+    color: #003048;
+    transform: rotate(-0.09deg);
+}
+
+.navbarScrollTextNumber{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 23px;
+}

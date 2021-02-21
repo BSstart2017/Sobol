@@ -1,0 +1,62 @@
+.positionPopUp{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    z-index: 3;
+    background: rgba(0, 48, 72, 0.9);
+    padding-top: 8rem;
+}
+
+.formPopUp{
+    background-color: #FFFFFF;
+}
+
+.formPopUpText h2{
+    font-style: normal;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 110.7%;
+    color: #000000;
+}
+
+.formPopUpText h3{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: rgba(0, 0, 0, 0.7);
+}
+.buttonStyleForm{
+    width: 30%;
+    border: 2px solid #41B7D4;
+    box-sizing: border-box;
+    font-style: normal;
+    font-weight: 900;
+    color: #FFFFFF;
+    background: linear-gradient(91.82deg, #81CCE9 1.02%, #00A1BF 97.59%);
+    border-radius: 34px;
+    font-size: 16px;
+    line-height: 20px;
+
+}
+
+.formField {
+    width: 50%;
+    border: 0;
+    border-bottom: 2px solid gray;
+    outline: 0;
+    font-size: 1.3rem;
+    padding: 5px 0;
+    transition: border-color 0.2s;
+}
+.formFieldNumber input{
+    border: 0;
+    border-bottom: 2px solid gray;
+    outline: 0;
+    font-size: 1.3rem;
+    padding: 5px 0;
+    transition: border-color 0.2s;
+}

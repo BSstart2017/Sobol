@@ -5,6 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {Provider} from 'react-redux';
 import state from './Redux/store';
+import "typeface-montserrat";
 
 ReactDOM.render(
     <React.StrictMode>

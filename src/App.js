@@ -10,8 +10,8 @@ import SideBarBottomContainer from "./Components/Sidebar/SideBarBottomContainer"
 
 const App = (props) => {
     return (<>
-            <Container className="container">
-                <Row className="mr-0">
+            <Container>
+                <Row className="mr-0 ">
                     <Col className="col-md-11">
                         <Homepage/>
                     </Col>
@@ -29,7 +29,6 @@ const App = (props) => {
                         </Col>
                         </Row>
                     </Col>
-
                 </Row>
             </Container>
         </>
