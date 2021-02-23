@@ -4,7 +4,7 @@ import {Field, reduxForm} from "redux-form";
 import {Col, Row} from "react-bootstrap";
 import HomeContactFooter from "./HomeContactFooter";
 import HomeContactMessage from "./HomeContactMessage";
-import PopUpGood from "../../PopUp/PopUp";
+
 
 const HomeContactText = (props) => {
     const onSubmit = (formData) => {
@@ -20,7 +20,6 @@ const HomeContactText = (props) => {
                     <HomeContactMessage/>
                 </Col>
                 <HomeReduxForm onSubmit={onSubmit}/>
-                <PopUpGood />
             </Row>
             <Col className="col-md-12 pl-5">
                 <HomeContactFooter/>
@@ -30,7 +29,6 @@ const HomeContactText = (props) => {
 }
 
 const HomeForm = (props) => {
-
     return (
         <Col className="col-md-4 pt-5">
             <form onSubmit={props.handleSubmit}>

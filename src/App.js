@@ -4,9 +4,10 @@ import {Col, Container, Row} from "react-bootstrap";
 import "./App.css";
 import Navbarscrol from "./Components/Navbar/Navbarscrol";
 import Homepage from "./Components/Home/Homepage/Homepage";
-import {connect} from "react-redux";
 import SideBarTopContainer from "./Components/Sidebar/SideBarTopContainer";
 import SideBarBottomContainer from "./Components/Sidebar/SideBarBottomContainer";
+import React from "react";
+import PopUpText from "./Components/PopUp/PopUp";
 
 const App = (props) => {
     return (<>
@@ -30,17 +31,11 @@ const App = (props) => {
                         </Row>
                     </Col>
                 </Row>
+                <PopUpText />
             </Container>
         </>
     );
 }
 
-const mapStateToProps = (state) => ({
-    carouselsContact: state.Carousels.carouselsService
-})
 
-const mapDispatchToProps = (dispatch) => {
-    return {}
-}
-
-export default connect(mapStateToProps, mapDispatchToProps)(App);
+export default App;

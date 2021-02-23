@@ -1,8 +1,13 @@
 import React from "react";
 import {Button, Col, Row} from "react-bootstrap";
 import style from "../Home/Homepage/Homeheader/homeheader.module.css";
+import {connect} from "react-redux";
+import {transformPopUp} from "../../Redux/popUpReducer";
 
-const Navbarscrol = () => {
+const Navbarscrol = (props) => {
+    const openPopUp = () => {
+        props.transformPopUp(true)
+    }
     return (
         <Row className={"w-100 bg-white " + style.positionNavbarScroll}>
             <Col className="col-md-3 d-flex align-items-center justify-content-center">
@@ -25,7 +30,7 @@ const Navbarscrol = () => {
             </Col>
             <Col className="col-md-3 p-2 d-flex align-items-center justify-content-center">
                 <div>
-                    <Button className={"p-3 " + style.headerButtonHeight} type="submit">БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ</Button>
+                    <Button onClick={openPopUp} className={"p-3 " + style.headerButtonHeight} type="submit">БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ</Button>
                 </div>
             </Col>
             <Col className={"col-md-1 d-flex align-items-center  justify-content-center pl-5 " + style.navbarScrollTextEng}>
@@ -35,4 +40,4 @@ const Navbarscrol = () => {
     )
 }
 
-export default Navbarscrol;
+export default connect(null, {transformPopUp}) (Navbarscrol);

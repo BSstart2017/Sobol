@@ -60,3 +60,11 @@
     padding: 5px 0;
     transition: border-color 0.2s;
 }
+
+.formTransformActive{
+    transform: scale(1);
+}
+
+.formTransformNone{
+    transform: scale(0);
+}
