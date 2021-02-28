@@ -2,8 +2,17 @@ import React from "react";
 import {Col, Nav, Row} from "react-bootstrap";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import style from "./home.module.css";
+import {numberNavbarAC} from "../../../Redux/navBarScrollReducer";
+import {connect} from "react-redux";
+import VisibilitySensor from "react-visibility-sensor";
+import {numberButtonAC} from "../../../Redux/sideBarReducer";
 
-const Homefooter = () => {
+const Homefooter = (props) => {
+    function onChange (isVisible) {
+        if(isVisible)
+            props.getNumberNavbar(0)
+            props.staticNumberButton(0)
+    }
     return (
             <Row className={style.footerHeight}>
                 <Col className="col-md-4 d-flex align-items-end justify-content-center">
@@ -25,14 +34,36 @@ const Homefooter = () => {
                 </Col>
                 <Col className="col-md-4 d-flex align-items-center justify-content-center">
                     <div className={style.footerTextMe}>
-                        <p>Мы верим, что самые ценное и в мире<br/>— эмоции. Один возглас «вау!», прозвучавший
-                            <br/>на событии, ценнее всех лайков, лидов и кликов.<br/>
-                            <br/>19 лет мы делаем то, во что верим.
-                        </p>
+                        <VisibilitySensor onChange={onChange}>
+                            {({isVisible    }) =>
+                                <div>
+                                    {isVisible ?
+                                        <p>Мы верим, что самые ценное и в мире<br/>— эмоции. Один возглас «вау!», прозвучавший
+                                            <br/>на событии, ценнее всех лайков, лидов и кликов.<br/>
+                                            <br/>19 лет мы делаем то, во что верим.
+                                        </p>
+                                        : <p>Мы верим, что самые ценное и в мире<br/>— эмоции. Один возглас «вау!», прозвучавший
+                                            <br/>на событии, ценнее всех лайков, лидов и кликов.<br/>
+                                            <br/>19 лет мы делаем то, во что верим.
+                                        </p>}
+                                </div>
+                            }
+                        </VisibilitySensor >
                     </div>
                 </Col>
             </Row>
     )
 }
 
-export default Homefooter;
+const mapDispatchToProps = (dispatch) =>{
+    return {
+        getNumberNavbar:(numberNavbar) => {
+            dispatch(numberNavbarAC(numberNavbar));
+        },
+        staticNumberButton:(NewNumberCarousels) => {
+            dispatch(numberButtonAC(NewNumberCarousels));
+        }
+    }
+}
+
+export default connect(null, mapDispatchToProps) (Homefooter);

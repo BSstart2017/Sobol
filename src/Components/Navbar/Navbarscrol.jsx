@@ -2,16 +2,21 @@ import React from "react";
 import {Button, Col, Row} from "react-bootstrap";
 import style from "../Home/Homepage/Homeheader/homeheader.module.css";
 import {connect} from "react-redux";
-import {transformPopUp} from "../../Redux/popUpReducer";
+import {numberNavbarAC} from "../../Redux/navBarScrollReducer";
+
+const localState = [
+    {id:0, textNavbar: "О НАС"},
+    {id:1, textNavbar: "УСЛУГИ"},
+    {id:2, textNavbar: "ПОРТФОЛИО"},
+    {id:3, textNavbar: "КОНТАКТЫ"}
+]
 
 const Navbarscrol = (props) => {
-    const openPopUp = () => {
-        props.transformPopUp(true)
-    }
+    let textNavbar = localState[props.numberNavbar].textNavbar
     return (
-        <Row className={"w-100 bg-white " + style.positionNavbarScroll}>
+        <Row  className={"w-100 bg-white " + style.positionNavbarScroll}>
             <Col className="col-md-3 d-flex align-items-center justify-content-center">
-                <div>
+                <div id='target'>
                     <p className={style.navbarScrollText}>evento
                         <span className={style.headerLogoColorBlue}>.</span>
                     </p>
@@ -19,7 +24,7 @@ const Navbarscrol = (props) => {
             </Col>
             <Col className="col-md-2 d-flex align-items-center justify-content-center">
                 <div >
-                    <p className={style.navbarScrollText}>О НАС</p>
+                <h3 className={style.navbarScrollText}>{textNavbar}</h3>
                 </div>
             </Col>
             <Col className="col-md-3 d-flex align-items-center justify-content-center">
@@ -30,7 +35,7 @@ const Navbarscrol = (props) => {
             </Col>
             <Col className="col-md-3 p-2 d-flex align-items-center justify-content-center">
                 <div>
-                    <Button onClick={openPopUp} className={"p-3 " + style.headerButtonHeight} type="submit">БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ</Button>
+                    <Button className={"p-3 " + style.headerButtonHeight} type="submit">БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ</Button>
                 </div>
             </Col>
             <Col className={"col-md-1 d-flex align-items-center  justify-content-center pl-5 " + style.navbarScrollTextEng}>
@@ -40,4 +45,15 @@ const Navbarscrol = (props) => {
     )
 }
 
-export default connect(null, {transformPopUp}) (Navbarscrol);
+const mapStateToProps = (state) => ({
+    numberNavbar: state.NavBarScroll.numberNavbar,
+})
+const mapDispatchToProps = (dispatch) =>{
+    return {
+        getNumberNavbar:(numberNavbar) => {
+            dispatch(numberNavbarAC(numberNavbar));
+        }
+    }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps) (Navbarscrol);

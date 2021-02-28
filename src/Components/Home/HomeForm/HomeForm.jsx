@@ -39,13 +39,16 @@ const HomeForm = (props) => {
                     </h2>
                 </div>
                     <div>
-                        <Field className={style.formField} placeholder={"Имя"} component={"input"} name={"name"}/>
+                        <Field className={style.formField}
+                               placeholder={"Имя"} component={"input"} name={"name"}/>
                     </div>
                     <div>
-                        <Field className={style.formField} placeholder={"e-mail"} component={"input"} name={"mail"}/>
+                        <Field className={style.formField}
+                               placeholder={"e-mail"} component={"input"} name={"mail"}/>
                     </div>
                     <div>
-                        <Field className={style.formField} placeholder={"Введите текст"} component={"input"} name={"text"}/>
+                        <Field className={style.formField}
+                               placeholder={"Введите текст"} component={"input"} name={"text"}/>
                     </div>
                 <div className="pt-4">
                     <button className={"p-3 " + style.buttonStyleForm}>ОТПРАВИТЬ ЗАЯВКУ</button>

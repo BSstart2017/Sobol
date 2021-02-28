@@ -1,6 +1,7 @@
 import {connect} from "react-redux";
 import {carouselsNumberAC} from "../../../../Redux/carouselsReducer";
 import Homecontact from "./Homecontact";
+import {numberPopUpAC} from "../../../../Redux/popUpReducer";
 
 
 const mapStateToProps = (state) => ({
@@ -19,7 +20,11 @@ const mapDispatchToProps = (dispatch) =>{
         },
         staticNumber:(NewNumberCarousels) => {
             dispatch(carouselsNumberAC(NewNumberCarousels));
+        },
+        transformPopUp:(numberPopUp) => {
+            dispatch(numberPopUpAC(numberPopUp));
         }
+
     }
 }
 

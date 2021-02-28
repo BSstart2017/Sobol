@@ -27,6 +27,7 @@ const Homereviews = (props) => {
         </div>
     )
 
+
     let onStaticNumberReviews = (values) => {
         props.numberStaticReviews(values.currentTarget.align)
     }

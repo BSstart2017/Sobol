@@ -1,26 +1,29 @@
 import React from "react";
-import {Button, Col, Row} from "react-bootstrap";
+import {Button, Col, Modal, Row} from "react-bootstrap";
 import style from "./homeheader.module.css";
-import {connect} from "react-redux";
-import {transformPopUp} from "../../../../Redux/popUpReducer";
+import PopUp from "../../../PopUp/PopUp";
 
-
-const Headerbutton = (props) => {
-
-    const openPopUp = () => {
-        props.transformPopUp(true)
-    }
+function Headerbutton() {
+    const [modalShow, setModalShow] = React.useState(false);
 
     return (
+        <>
             <Row className="h-100">
                 <Col className="d-flex align-items-center justify-content-center">
-                    <div >
-                        <Button className={style.headerButtonHeight} onClick={openPopUp}
-                                type="submit">БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ</Button>
+                    <div>
+                        <Button className={style.headerButtonHeight}
+                                onClick={() => setModalShow(true)}>
+                            БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ</Button>
                     </div>
                 </Col>
             </Row>
-    )
+            <PopUp
+                show={modalShow}
+                onHide={() => setModalShow(false)}
+            />
+        </>
+    );
 }
 
-export default connect(null, {transformPopUp}) (Headerbutton);
+export default Headerbutton;
+
