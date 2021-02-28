@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/Sobol/static/css/main.ce5c6059.chunk.css",
-    "main.js": "/Sobol/static/js/main.3b97ed67.chunk.js",
-    "main.js.map": "/Sobol/static/js/main.3b97ed67.chunk.js.map",
-    "runtime-main.js": "/Sobol/static/js/runtime-main.a25306c3.js",
-    "runtime-main.js.map": "/Sobol/static/js/runtime-main.a25306c3.js.map",
+    "main.css": "/Sobol/static/css/main.d7d3996f.chunk.css",
+    "main.js": "/Sobol/static/js/main.2f101464.chunk.js",
+    "main.js.map": "/Sobol/static/js/main.2f101464.chunk.js.map",
+    "runtime-main.js": "/Sobol/static/js/runtime-main.9e57c185.js",
+    "runtime-main.js.map": "/Sobol/static/js/runtime-main.9e57c185.js.map",
     "static/css/2.c4ee5c3c.chunk.css": "/Sobol/static/css/2.c4ee5c3c.chunk.css",
-    "static/js/2.7dd9cd3a.chunk.js": "/Sobol/static/js/2.7dd9cd3a.chunk.js",
-    "static/js/2.7dd9cd3a.chunk.js.map": "/Sobol/static/js/2.7dd9cd3a.chunk.js.map",
-    "static/js/3.15fabd24.chunk.js": "/Sobol/static/js/3.15fabd24.chunk.js",
-    "static/js/3.15fabd24.chunk.js.map": "/Sobol/static/js/3.15fabd24.chunk.js.map",
+    "static/js/2.2135275d.chunk.js": "/Sobol/static/js/2.2135275d.chunk.js",
+    "static/js/2.2135275d.chunk.js.map": "/Sobol/static/js/2.2135275d.chunk.js.map",
+    "static/js/3.5f9ced66.chunk.js": "/Sobol/static/js/3.5f9ced66.chunk.js",
+    "static/js/3.5f9ced66.chunk.js.map": "/Sobol/static/js/3.5f9ced66.chunk.js.map",
     "index.html": "/Sobol/index.html",
     "static/css/2.c4ee5c3c.chunk.css.map": "/Sobol/static/css/2.c4ee5c3c.chunk.css.map",
-    "static/css/main.ce5c6059.chunk.css.map": "/Sobol/static/css/main.ce5c6059.chunk.css.map",
-    "static/js/2.7dd9cd3a.chunk.js.LICENSE.txt": "/Sobol/static/js/2.7dd9cd3a.chunk.js.LICENSE.txt",
+    "static/css/main.d7d3996f.chunk.css.map": "/Sobol/static/css/main.d7d3996f.chunk.css.map",
+    "static/js/2.2135275d.chunk.js.LICENSE.txt": "/Sobol/static/js/2.2135275d.chunk.js.LICENSE.txt",
     "static/media/index.css": "/Sobol/static/media/montserrat-latin-900italic.efcaa0f6.woff"
   },
   "entrypoints": [
-    "static/js/runtime-main.a25306c3.js",
+    "static/js/runtime-main.9e57c185.js",
     "static/css/2.c4ee5c3c.chunk.css",
-    "static/js/2.7dd9cd3a.chunk.js",
-    "static/css/main.ce5c6059.chunk.css",
-    "static/js/main.3b97ed67.chunk.js"
+    "static/js/2.2135275d.chunk.js",
+    "static/css/main.d7d3996f.chunk.css",
+    "static/js/main.2f101464.chunk.js"
   ]
 }
