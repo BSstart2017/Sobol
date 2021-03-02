@@ -1,3 +1,50 @@
+@media (max-width: 576px) {
+    .carouselsDivXS{
+        width: 100%!important;
+    }
+    .carouselsTextBorderButtonXS{
+        padding-left: 2rem!important;
+        padding-right: 2rem!important;
+    }
+}
+
+.biznes1{
+    position: relative;
+    background-image: url("http://localhost:3000/Sobol/img/biznes1.png");
+    background-size: cover;
+    overflow: hidden;
+}
+.biznes2{
+    position: relative;
+    background-image: url("http://localhost:3000/Sobol/img/biznes2.png");
+    background-size: cover;
+    overflow: hidden;
+}
+.biznes3{
+    position: relative;
+    background-image: url("http://localhost:3000/Sobol/img/biznes3.png");
+    background-size: cover;
+    overflow: hidden;
+}
+.biznes4{
+    position: relative;
+    background-image: url("http://localhost:3000/Sobol/img/biznes4.png");
+    background-size: cover;
+    overflow: hidden;
+}
+.biznes5{
+    position: relative;
+    background-image: url("http://localhost:3000/Sobol/img/biznes5.png");
+    background-size: cover;
+    overflow: hidden;
+}
+.biznes6{
+    position: relative;
+    background-image: url("http://localhost:3000/Sobol/img/biznes6.png");
+    background-size: cover;
+    overflow: hidden;
+}
+
 .divHeight{
     height: 98px;
     width: 234px;
@@ -13,11 +60,7 @@
 
 
 .carouselsDiv{
-    position: absolute;
-    top: 3rem;
-    left:105px;
-    width: 468px;
-    height: 90%;
+    width: 40%;
     background: rgba(0, 48, 72, 0.7);
     backdrop-filter: blur(15px);
 }

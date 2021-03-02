@@ -9,17 +9,17 @@ import HomeContactText from "./HomeForm/HomeForm";
 const Home = () => {
     return (
         <Row>
-            <Col className="col-md-12 pr-0">
+            <Col md={12} xs={12} className="pr-0">
                 <Homeabout/>
             </Col>
-            <Col className="col-md-12">
+            <Col md={12} xs={12}>
                 <HomeContactContainer />
             </Col>
-            <Col className="col-md-12 pr-0">
+            <Col md={12} xs={12} className="pr-0">
                 <Homeservices/>
                 <HomeReviewsContainer/>
             </Col>
-            <Col className="col-md-12">
+            <Col md={12} xs={12}>
                 <HomeContactText />
             </Col>
         </Row>

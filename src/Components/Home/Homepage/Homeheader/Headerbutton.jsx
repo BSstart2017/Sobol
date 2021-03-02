@@ -1,5 +1,5 @@
 import React from "react";
-import {Button, Col, Modal, Row} from "react-bootstrap";
+import {Button, Col, Row} from "react-bootstrap";
 import style from "./homeheader.module.css";
 import PopUp from "../../../PopUp/PopUp";
 

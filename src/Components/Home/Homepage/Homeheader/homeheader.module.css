@@ -11,14 +11,39 @@
     background: linear-gradient(91.82deg, #81CCE9 1.02%, #00A1BF 97.59%);
     border-radius: 34px
 }
-
-.headerLogoTest p{
-    font-style: normal;
+@media (max-width: 576px) {
+    .paddingLeftXS2{
+        padding-left: 2rem!important;
+    }
+    .paddingBottomXS1{
+        padding-bottom: 1rem!important;
+    }
+    .paddingTopXS2{
+        padding-top: 2rem!important;
+    }
+    .widthsXS{
+        width: 80%!important;
+    }
+    .navbarScrollTextXS{
+        font-size: 24px!important;
+        padding-left: 3rem!important;
+        padding-top: 1rem!important;
+    }
+    .navbarScrollTextNavXS{
+        font-size: 24px!important;
+        font-weight: 200!important;
+        padding-left: 2rem!important;
+        padding-top: 1rem!important;
+    }
+}
+.headerLogoTest h1{
     font-weight: 900;
     font-size: 28px;
     color: #000000;
-    margin: 0;
-    padding: 0;
+}
+
+.headerLogoTest span{
+    color: #04A3C1;
 }
 
 .headerLogoTextNumber{
@@ -29,16 +54,10 @@
     color: rgba(0, 48, 72, 0.5);
 }
 
-.headerLogoColorBlue{
-    color: #04A3C1;
-}
+
 
 .headerLogoColorNumber{
     color:#7CCAE8;
-}
-
-.homeHeaderHeight{
-    height: 276px;
 }
 
 .positionNavbarScroll{
@@ -53,6 +72,10 @@
     font-size: 45px;
     line-height: 110.7%;
     color: #000000;
+}
+
+.navbarScrollText span{
+    color: #00A1BF;
 }
 
 .navbarScrollTextEng{

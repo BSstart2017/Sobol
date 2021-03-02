@@ -13,25 +13,25 @@ const App = (props) => {
     return (<>
             <Container>
                 <Row className="mr-0 ">
-                    <Col className="col-md-11">
+                    <Col md={11}>
                         <Homepage/>
                     </Col>
-                    <Col className="col-md-1">
+                    <Col md={1} className="d-none d-sm-block">
                         <SideBarTopContainer/>
                     </Col>
-                    <Col className="col-md-12 p-0">
+                    <Col md={12} xs={12} className="p-0">
                         <Navbarscrol/>
                         <Row>
-                        <Col className="col-md-11">
-                            <Home/>
-                        </Col>
-                        <Col className="col-md-1">
-                            <SideBarBottomContainer/>
-                        </Col>
+                            <Col md={11} xs={12}>
+                                <Home/>
+                            </Col>
+                            <Col md={1} className="d-none d-sm-block">
+                                <SideBarBottomContainer/>
+                            </Col>
                         </Row>
                     </Col>
                 </Row>
-                <PopUpText />
+                <PopUpText/>
             </Container>
         </>
     );

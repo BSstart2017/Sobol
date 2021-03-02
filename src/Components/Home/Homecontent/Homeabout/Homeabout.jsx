@@ -6,18 +6,12 @@ import Aboutuscontent from "./Aboutuscontent";
 const Homeabout = () => {
     return (
         <Row>
-            <Col className="col-md-12">
-                <div className={style.aboutGifHeight}>
-                    <img id="about" className="h-100 w-100" src={process.env.PUBLIC_URL + "/gif/gifabout.png"} alt="gifabout"/>
+            <Col md={12}>
+                <div className={style.slider + " " + style.sliderXS}>
                 </div>
             </Col>
-            <Col className="col-md-12">
-                <div className={style.aboutImgHeight}>
-                    <img className="h-100 w-100" src={process.env.PUBLIC_URL +"/img/Rectangle104.png"} alt="Rectangle104"/>
-                </div>
-                <div className={style.aboutText}>
-                    <Aboutuscontent/>
-                </div>
+            <Col md={12} className="pr-0">
+                <Aboutuscontent/>
             </Col>
         </Row>
     )

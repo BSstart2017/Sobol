@@ -16,14 +16,4 @@ const popUpReducer = (state = initialState, action) => {
 
 export const numberPopUpAC = (numberPopUp) => ({type: NUMBER_POP_UP, numberPopUp});
 
-export const transformPopUp = (numberPopUp) => (dispatch) => {
-    if (numberPopUp !== initialState.numberPopUp) {
-        return dispatch(numberPopUpAC(numberPopUp))
-    }
-    if (numberPopUp === initialState.numberPopUp) {
-        dispatch(numberPopUpAC(numberPopUp))
-    }
-}
-
-
 export default popUpReducer;

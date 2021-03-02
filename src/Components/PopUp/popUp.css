@@ -1,17 +1,13 @@
 .positionPopUp{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    z-index: 3;
     background: rgba(0, 48, 72, 0.9);
-    padding-top: 8rem;
 }
 
 .formPopUp{
     background-color: #FFFFFF;
+}
+
+.modal-header {
+    border-bottom: none !important;
 }
 
 .formPopUpText h2{
@@ -20,6 +16,7 @@
     font-size: 30px;
     line-height: 110.7%;
     color: #000000;
+    text-align: center;
 }
 
 .formPopUpText h3{
@@ -28,6 +25,11 @@
     font-size: 16px;
     line-height: 20px;
     color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+}
+.modal-footer {
+    justify-content: center!important;
+    border-top: none!important;
 }
 .buttonStyleForm{
     width: 30%;
@@ -40,31 +42,13 @@
     border-radius: 34px;
     font-size: 16px;
     line-height: 20px;
-
 }
 
-.formField {
-    width: 50%;
-    border: 0;
-    border-bottom: 2px solid gray;
-    outline: 0;
-    font-size: 1.3rem;
-    padding: 5px 0;
-    transition: border-color 0.2s;
-}
 .formFieldNumber input{
     border: 0;
     border-bottom: 2px solid gray;
     outline: 0;
-    font-size: 1.3rem;
+    font-size: 2rem;
     padding: 5px 0;
     transition: border-color 0.2s;
-}
-
-.formTransformActive{
-    transform: scale(1);
-}
-
-.formTransformNone{
-    transform: scale(0);
 }

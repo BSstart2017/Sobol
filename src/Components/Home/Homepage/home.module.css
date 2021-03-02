@@ -1,31 +1,47 @@
-.text p{
-    position: absolute;
-    font-size: 107px;
-    font-style: normal;
+@media (max-width: 576px) {
+    .paddingLeftXS3{
+        padding-left: 3rem!important;
+    }
+    .paddingLeftXS5{
+        padding-left: 5rem!important;
+    }
+    .paddingLeftXS2{
+        padding-left: 2rem!important;
+    }
+    .paddingBottomXS1{
+        padding-bottom: 1rem!important;
+    }
+    .widthsXS{
+        width: 100%!important;
+    }
+    .textXS h1{
+        font-weight: 600!important;
+        font-size: 36px!important;
+        color: #FFFFFF;
+    }
+    .textXS h2{
+        font-weight: 600!important;
+        font-size: 18px!important;
+        color: #FFFFFF;
+    }
+    .borderXS{
+        border: 1px solid #FFFFFF;
+    }
+}
+
+.slider{
+    position: relative;
+    background-image: url("http://localhost:3000/Sobol/img/Rectangle45.png");
+    background-size: cover;
+    overflow: hidden;
+}
+
+.text h1{
     font-weight: 900;
-    line-height: 122px;
-    letter-spacing: -0.02em;
-    text-align: left;
-    top: 40px;
-    left: 40px;
+    font-size: 107px;
     color: #FFFFFF;
 }
 
-.height{
-    height: 304px;
-}
-.footerTextBest {
-    font-size: 16px;
-    font-style: normal;
-    line-height: 20px;
-    letter-spacing: -0.08em;
-    text-align: left;
-    font-weight: 300;
-
-    margin: 0;
-    padding: 0;
-
-}
 .footerTextBest p{
     font-size: 16px;
     font-style: normal;
@@ -33,7 +49,6 @@
     letter-spacing: -0.08em;
     text-align: left;
     font-weight: 300;
-
     margin: 0;
     padding: 0;
 
@@ -43,7 +58,7 @@
 }
 
 .footerPadding{
-    padding-bottom: 40px;
+    padding-bottom: 80px;
     padding-right: 10px;
     padding-left: 10px;
 }
