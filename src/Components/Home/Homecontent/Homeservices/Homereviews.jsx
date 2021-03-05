@@ -20,10 +20,13 @@ const Homereviews = (props) => {
 
     let ElementsTextReviews = props.carouselsReviews.map(p =>
         <div>
-            <h2 className="pb-5">ЧТО О НАС ГОВОРЯТ:</h2>
+            <h2 className="pb-5 pt-5">ЧТО О НАС ГОВОРЯТ :</h2>
             <h3>“</h3>
+            <Col md={12} xs={11} className={style.paddingLeftXS4}>
             <h4 className="pb-4">{p.textReviews1}</h4>
             <h4 className="pb-5">{p.textReviews2}</h4>
+            <h3 className="d-block d-sm-none mb-0">“</h3>
+            </Col>
         </div>
     )
 
@@ -33,11 +36,11 @@ const Homereviews = (props) => {
     }
 
     const ElementReviewsButton = props.carouselsReviews.map(i =>
-        <Col className="col-md-1 p-0 d-flex justify-content-center">
+        <Col md={1} className="p-0 d-flex justify-content-center">
             <div align={Number(i.id)} onClick={onStaticNumberReviews}
-                  className={Number(props.carouselsNumberReviews) === Number(i.id)
-                ? localState.styleButton + " " + style.circleFull
-                : localState.styleButton}>
+                 className={Number(props.carouselsNumberReviews) === Number(i.id)
+                     ? localState.styleButton + " " + style.circleFull
+                     : localState.styleButton}>
             </div>
         </Col>
     )
@@ -45,22 +48,31 @@ const Homereviews = (props) => {
 
     return (
         <Row>
-            <Col className="col-md-12">
-                <img className="img-fluid w-100" src={process.env.PUBLIC_URL + "/img/Rectangle112.png"}
-                     alt="Rectangle112"/>
-                <Col
-                    className={"col-md-6 justify-content-end position-absolute text-center " + style.reviewsCarouselsPos + " " + style.reviewsCarouselsText}>
-                    {ElementsTextReviews[props.carouselsNumberReviews]}
-                    <Row className="justify-content-center">
-                        <Col className="col-md-1 p-0 d-flex justify-content-end">
-                            <h1 className={style.colorNext} onClick={onNumberReviewsMinus}>{text1}</h1>
-                        </Col>
-                        {ElementReviewsButton}
-                        <Col className="col-md-1 p-0 d-flex justify-content-between">
-                            <h1 onClick={onNumberReviewsPlus} className={style.colorNext}> > </h1>
-                        </Col>
-                    </Row>
+            <Col xs={12} className={"d-block d-sm-none " + style.PaddingRightXS}>
+                    <Col xs={12} className={"text-center " + style.reviewsCarouselsText + " " + style.reviewsBaground}>
+                        {ElementsTextReviews[props.carouselsNumberReviews]}
+                    </Col>
+                <Col xs={12} className={"d-flex justify-content-end pr-5 " + style.Rectangle}>
+                    <Col xs={1} className="p-0 d-flex justify-content-between">
+                        <h1 onClick={onNumberReviewsPlus} className={"pb-5 " + style.colorNext + " " + style.circleXS}>> </h1>
+                    </Col>
                 </Col>
+            </Col>
+            <Col md={12} className={"d-none d-sm-block " + style.PaddingRightXS}>
+                <div className={"d-flex justify-content-end pr-5 " + style.Rectangle}>
+                    <Col md={6} className={"text-center " + style.reviewsCarouselsText}>
+                        {ElementsTextReviews[props.carouselsNumberReviews]}
+                        <Row className="justify-content-center">
+                            <Col md={1} className="p-0 d-flex justify-content-end">
+                                <h1 className={style.colorNext} onClick={onNumberReviewsMinus}>{text1}</h1>
+                            </Col>
+                            {ElementReviewsButton}
+                            <Col md={1} className="p-0 d-flex justify-content-between">
+                                <h1 onClick={onNumberReviewsPlus} className={"pb-5 " + style.colorNext}> > </h1>
+                            </Col>
+                        </Row>
+                    </Col>
+                </div>
             </Col>
         </Row>
     )

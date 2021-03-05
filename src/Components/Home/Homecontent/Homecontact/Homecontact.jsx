@@ -81,13 +81,13 @@ const Homecontact = (props) => {
                     <Col md={5} xs={6} className="pt-md-5 d-flex justify-content-between text-center p-md-0">
                         {ElementButton[2]}
                     </Col>
-                    <Col md={5} xs={6} className="p-md-0 d-flex justify-content-end text-center">
+                    <Col md={5} xs={6} className="p-md-0 pb-md-5 d-flex justify-content-end text-center">
                         {ElementButton[3]}
                     </Col>
-                    <Col md={2} xs={6} className="p-md-0 d-flex justify-content-center text-center">
+                    <Col md={2} xs={6} className="p-md-0 pb-md-5 d-flex justify-content-center text-center">
                         {ElementButton[4]}
                     </Col>
-                    <Col md={5} xs={6} className="d-flex justify-content-between text-center p-md-0">
+                    <Col md={5} xs={6} className="d-flex pb-md-5 justify-content-between text-center p-md-0">
                         {ElementButton[5]}
                     </Col>
                 </Row>

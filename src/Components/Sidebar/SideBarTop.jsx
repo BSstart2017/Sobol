@@ -15,7 +15,7 @@ const SideBarTop = (props) => {
                  className={Number(props.numberButton) === Number(i.id)
                      ? style.sidebarRightText + " " + style.sidebarButtonActive
                      : style.sidebarRightText}>
-                <Col className="col-md-1">
+                <Col md={1}>
                     <Nav.Link className="pt-4 pb-4" href={i.idNav}>{i.textButton}</Nav.Link>
                 </Col>
             </div>
@@ -26,7 +26,7 @@ const SideBarTop = (props) => {
         <div className="h-100">
             <Row className={style.sidebarEngPosition}>
                 <div className="d-flex align-items-center">
-                    <Col className="col-md-12">
+                    <Col md={12}>
                         <Sidebareng/>
                     </Col>
                 </div>

@@ -1,3 +1,27 @@
+@media (max-width: 576px) {
+    .paddingLeftXS4 {
+        padding-left: 4rem !important;
+    }
+    .bgColorXS{
+        background: #003048 !important;
+    }
+    .styleTextRightXS{
+        color:#FFFFFF !important;
+        font-style: normal !important;
+        font-weight: 700 !important;
+        font-size: 12px !important;
+        letter-spacing: 0 !important;
+        text-align: left !important;
+    }
+    .styleTextLeftXS{
+        color:#7BCAE7 !important;
+        font-style: normal !important;
+        font-weight: 700 !important;
+        font-size: 20px !important;
+        letter-spacing: 0 !important;
+        text-align: left !important;
+    }
+}
 .styleTextLeft{
     font-style: normal;
     font-weight: bold;
